@@ -1,0 +1,4 @@
+var container=document.querySelector(".gallery"),mixer=mixitup(container,{selectors:{control:"[our-mix-control]"}});$(document).ready(function(){(new WOW).init(),$(".owl-carousel").owlCarousel({autoplay:!0,autoplayTimeout:3e3,smartSpeed:1e3,responsive:{0:{items:1},600:{items:2},1000:{items:4}}}),$(".top").click(function(){$("html, body").animate({scrollTop:0},2e3)}),$(".top").hide(),$(window).scroll(function(){var o=$(this).scrollTop();o<500?$(".top").fadeOut():$(".top").fadeIn(),o>100?$("body").addClass("fixed"):$("body").removeClass("fixed"),o>500?$("body").addClass("sticky"):$("body").removeClass("sticky")}),$(".navbar-nav li").click(function(){$(this).addClass("active").siblings().removeClass("active")}),$('.navbar-nav li').click(function(){$('.navbar .navbar-collapse').removeClass('show')});$('.navbar-nav a[href^="#"]').click(function(o){o.preventDefault();var e=this.hash;$("html, body").animate({scrollTop:$(e).offset().top-70},500)})});
+
+
+
